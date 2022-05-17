@@ -1,0 +1,218 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "FM1608 to 6116 Adapter"
+Date "2022-05-16"
+Rev "1.0"
+Comp "Marc Deslauriers"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Memory_NVRAM:FM1608B-SG U2
+U 1 1 6282DF04
+P 6650 3000
+F 0 "U2" H 6650 3100 50  0000 C CNN
+F 1 "FM1608" H 6650 3000 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm" H 6650 3000 50  0001 C CNN
+F 3 "http://www.cypress.com/file/41731/download" H 6650 3000 50  0001 C CNN
+	1    6650 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 6116:6116 U1
+U 1 1 6282F8C1
+P 4500 3000
+F 0 "U1" H 4500 3100 50  0000 C CNN
+F 1 "6116" H 4500 3000 50  0000 C CNN
+F 2 "Package_DIP:DIP-24_W15.24mm" H 4500 3000 50  0001 C CNN
+F 3 "" H 4500 3000 50  0001 C CNN
+	1    4500 3000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2400 6150 2400
+Wire Wire Line
+	5000 2500 6150 2500
+Wire Wire Line
+	5000 2600 6150 2600
+Wire Wire Line
+	5000 2700 6150 2700
+Wire Wire Line
+	5000 2800 6150 2800
+Wire Wire Line
+	5000 2900 6150 2900
+Wire Wire Line
+	5000 3000 6150 3000
+Wire Wire Line
+	5000 3100 6150 3100
+Wire Wire Line
+	5000 3200 6150 3200
+Wire Wire Line
+	5000 3300 6150 3300
+Wire Wire Line
+	5000 3400 6150 3400
+$Comp
+L power:GND #PWR0101
+U 1 1 6283281B
+P 6650 4000
+F 0 "#PWR0101" H 6650 3750 50  0001 C CNN
+F 1 "GND" H 6655 3827 50  0000 C CNN
+F 2 "" H 6650 4000 50  0001 C CNN
+F 3 "" H 6650 4000 50  0001 C CNN
+	1    6650 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3800 6150 3800
+Wire Wire Line
+	6650 3800 6650 4000
+Connection ~ 6650 3800
+Wire Wire Line
+	6150 3600 6150 3800
+Connection ~ 6150 3800
+Wire Wire Line
+	6150 3800 6650 3800
+Wire Wire Line
+	6150 3500 6150 3600
+Connection ~ 6150 3600
+Wire Wire Line
+	4000 3600 3900 3600
+Wire Wire Line
+	3900 3600 3900 4400
+Wire Wire Line
+	3900 4400 7250 4400
+Wire Wire Line
+	7250 4400 7250 3600
+Wire Wire Line
+	7250 3600 7150 3600
+Wire Wire Line
+	4000 3400 3800 3400
+Wire Wire Line
+	3800 3400 3800 4500
+Wire Wire Line
+	3800 4500 7350 4500
+Wire Wire Line
+	7350 4500 7350 3400
+Wire Wire Line
+	7350 3400 7150 3400
+Wire Wire Line
+	3800 2400 4000 2400
+Wire Wire Line
+	3800 2500 4000 2500
+Wire Wire Line
+	3800 2600 4000 2600
+Wire Wire Line
+	3800 2700 4000 2700
+Wire Wire Line
+	3800 2800 4000 2800
+Wire Wire Line
+	3800 2900 4000 2900
+Wire Wire Line
+	3800 3000 4000 3000
+Wire Wire Line
+	3800 3100 4000 3100
+Text Label 3850 2400 0    50   ~ 0
+D0
+Text Label 3850 2500 0    50   ~ 0
+D1
+Text Label 3850 2600 0    50   ~ 0
+D2
+Text Label 3850 2700 0    50   ~ 0
+D3
+Text Label 3850 2800 0    50   ~ 0
+D4
+Text Label 3850 2900 0    50   ~ 0
+D5
+Text Label 3850 3000 0    50   ~ 0
+D6
+Text Label 3850 3100 0    50   ~ 0
+D7
+Wire Wire Line
+	7350 2400 7150 2400
+Wire Wire Line
+	7350 2500 7150 2500
+Wire Wire Line
+	7350 2600 7150 2600
+Wire Wire Line
+	7350 2700 7150 2700
+Wire Wire Line
+	7350 2800 7150 2800
+Wire Wire Line
+	7350 2900 7150 2900
+Wire Wire Line
+	7350 3000 7150 3000
+Wire Wire Line
+	7350 3100 7150 3100
+Text Label 7200 2400 0    50   ~ 0
+D0
+Text Label 7200 2500 0    50   ~ 0
+D1
+Text Label 7200 2600 0    50   ~ 0
+D2
+Text Label 7200 2700 0    50   ~ 0
+D3
+Text Label 7200 2800 0    50   ~ 0
+D4
+Text Label 7200 2900 0    50   ~ 0
+D5
+Text Label 7200 3000 0    50   ~ 0
+D6
+Text Label 7200 3100 0    50   ~ 0
+D7
+$Comp
+L power:+5V #PWR0102
+U 1 1 628432D2
+P 6650 2100
+F 0 "#PWR0102" H 6650 1950 50  0001 C CNN
+F 1 "+5V" H 6665 2273 50  0000 C CNN
+F 2 "" H 6650 2100 50  0001 C CNN
+F 3 "" H 6650 2100 50  0001 C CNN
+	1    6650 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 2200 6650 2150
+Wire Wire Line
+	4500 2200 4500 2150
+Wire Wire Line
+	4500 2150 6650 2150
+Connection ~ 6650 2150
+Wire Wire Line
+	6650 2150 6650 2100
+Wire Wire Line
+	4000 3300 3700 3300
+Wire Wire Line
+	3700 3300 3700 4600
+Wire Wire Line
+	3700 4600 7450 4600
+Wire Wire Line
+	7450 4600 7450 3300
+Wire Wire Line
+	7450 3300 7150 3300
+$Comp
+L Device:R_US R1
+U 1 1 62847470
+P 7750 3950
+F 0 "R1" H 7818 3996 50  0000 L CNN
+F 1 "10K" H 7818 3905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7790 3940 50  0001 C CNN
+F 3 "~" H 7750 3950 50  0001 C CNN
+	1    7750 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 4400 7750 4400
+Wire Wire Line
+	7750 4400 7750 4100
+Connection ~ 7250 4400
+Wire Wire Line
+	7750 3800 7750 2150
+Wire Wire Line
+	7750 2150 6650 2150
+$EndSCHEMATC

@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 6116
+D 2k x 8 static ram memory, DIP-24
+K Static RAM
+$ENDCMP
+#
+#End Doc Library
